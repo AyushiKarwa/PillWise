@@ -1,221 +1,297 @@
-# 🩺 PillWise – Smart Medicine Reminder & Healthcare Management System
+# 💊 PillWise – AI-Powered Smart Medicine Companion
 
 ## 📌 Overview
 
-**PillWise** is a full-stack MERN application that helps users manage their medications, prescriptions, and healthcare resources in one place. It provides timely medicine reminders, secure prescription management, doctor information, and nearby healthcare facilities to improve medication adherence and overall health management.
+**PillWise** is a full-stack AI-powered healthcare application built using **React, TypeScript, Node.js, Express, and MongoDB**. It helps users manage medicines, set smart reminders, scan medications, compare prices, detect drug interactions, locate nearby pharmacies, and receive AI-powered health assistance through Google's Gemini API.
+
+Designed as an all-in-one medicine companion, PillWise simplifies daily medication management while providing intelligent healthcare support.
 
 ---
 
-## 🚀 Features
+# ✨ Features
 
-### 🔐 Secure User Authentication
-- User registration and login
-- JWT-based authentication
-- Protected routes for authorized users
+## 💊 Medicine Cabinet
+- Add and manage medicines
+- Track available stock
+- View medicine details
+- Restock medicines
+- Medicine autocomplete suggestions
 
-### 💊 Smart Medicine Reminders
-- Add, edit, and delete medicines
-- Schedule reminders for medications
-- Track daily medicine intake
-- Prevent missed doses with timely alerts
+---
 
-### 📄 Prescription Management
+## ⏰ Smart Medicine Reminders
+- Schedule medicine reminders
+- Custom reminder times
+- Alarm notifications
+- Custom ringtone settings
+- Mark medicines as consumed
+- Reminder history
+
+---
+
+## 🤖 AI Health Assistant
+- AI-powered healthcare chatbot
+- Symptom guidance
+- Medicine-related queries
+- Conversation history
+- Rich formatted AI responses
+- Powered by Google Gemini API
+
+---
+
+## 📷 Medicine Scanner
+- Scan medicine information
+- Quickly identify medicines
+- Easy medicine entry
+
+---
+
+## 📄 Prescription Reader
 - Upload prescription images
-- View and manage prescriptions
-- Store doctor and patient details securely
-- Easy access to previous prescriptions
+- AI-assisted prescription reading
+- Extract medicine information
 
-### 👨‍⚕️ Doctor Directory
-- Browse doctor profiles
-- View doctor specialization
-- Access contact information
-- Filter doctors by specialty
+---
 
-### 🏥 Nearby Healthcare Services
-- Find nearby hospitals
-- Locate nearby medical stores
-- Quick access to healthcare facilities
+## 💰 Medicine Price Comparison
+- Compare medicine prices
+- View available alternatives
+- Help users find affordable options
 
-### 📱 Responsive User Interface
+---
+
+## ⚠️ Drug Interaction Checker
+- Check interactions between medicines
+- Identify possible risks before consumption
+
+---
+
+## 🏥 Nearby Pharmacies
+- Locate nearby pharmacies
+- Easy access to medicine stores
+
+---
+
+## 🚨 Emergency Section
+- Quick emergency information
+- Fast access to important healthcare resources
+
+---
+
+## 📜 Medicine History
+- Track medicine usage history
+- Maintain reminder history
+- View previous activities
+
+---
+
+## 📱 Responsive User Interface
+- Clean and modern interface
 - Mobile-friendly design
-- Clean and intuitive interface
+- Easy navigation
 - Built using React and Tailwind CSS
 
-### 🔒 Secure Backend
-- RESTful APIs built with Express.js
-- MongoDB database integration
-- JWT authentication and authorization
-
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 ### Frontend
 - React.js
+- TypeScript
+- Vite
 - Tailwind CSS
-- Redux Toolkit
-- React Router DOM
-- Axios
+- React Context API
 
 ### Backend
 - Node.js
 - Express.js
+- TypeScript
 
 ### Database
 - MongoDB
 - Mongoose
 
-### Authentication
-- JSON Web Tokens (JWT)
-- bcrypt.js
+### AI Integration
+- Google Gemini API
 
-### Other Tools
+### Other Libraries
+- Axios
 - dotenv
-- Nodemon
+- Bun
+- React Router
 
 ---
 
 # 📂 Project Structure
 
 ```
-PillWise/
+PillWise
 │
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
+├── src
+│   ├── components
+│   ├── pages
+│   ├── context
+│   ├── services
+│   └── data
 │
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── config/
-│   └── package.json
+├── server
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── services
+│   ├── config
+│   └── middlewares
 │
-└── README.md
+├── assets
+├── server.ts
+└── package.json
 ```
 
 ---
 
 # ⚙️ Installation
 
-## 1. Clone the Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/your-username/PillWise.git
+
 cd PillWise
 ```
 
-## 2. Install Dependencies
+---
 
-### Backend
+## Install Dependencies
 
 ```bash
-cd backend
 npm install
 ```
 
-### Frontend
+or
 
 ```bash
-cd frontend
-npm install
+bun install
 ```
 
 ---
 
-## 3. Configure Environment Variables
+## Configure Environment Variables
 
-Create a `.env` file inside the backend folder.
+Create a `.env` file in the project root.
 
 ```env
-PORT=5000
-
 MONGO_URI=your_mongodb_connection_string
 
-JWT_SECRET=your_secret_key
+GEMINI_API_KEY=your_google_gemini_api_key
+
+PORT=5000
 ```
 
 ---
 
-## 4. Run the Application
-
-### Start Backend
+## Start Development Server
 
 ```bash
-cd backend
-npm start
+npm run dev
 ```
 
-### Start Frontend
+or
 
 ```bash
-cd frontend
-npm start
+bun run dev
 ```
 
 ---
 
-# 📸 Application Screenshots
+# 📸 Screenshots
 
-## 🔐 Login & Signup
-
-> Add screenshot here
-
----
-
-## 💊 Medicine Dashboard
+## 🏠 Dashboard
 
 > Add screenshot here
 
 ---
 
-## 📄 Prescription Management
+## 💊 Medicine Cabinet
 
 > Add screenshot here
 
 ---
 
-## 👨‍⚕️ Doctor Directory
+## ⏰ Medicine Reminders
 
 > Add screenshot here
 
 ---
 
-## 🏥 Nearby Hospitals
+## 🤖 AI Assistant
 
 > Add screenshot here
 
 ---
 
-## 📱 Responsive Design
+## 📷 Medicine Scanner
 
 > Add screenshot here
 
 ---
 
-# ✨ Key Features
+## 📄 Prescription Reader
 
-- Secure JWT Authentication
-- Medicine Reminder System
-- Prescription Upload & Management
-- Doctor Directory
-- Nearby Hospitals & Medical Stores
-- Responsive Design
-- REST API Architecture
-- MongoDB Database Integration
+> Add screenshot here
+
+---
+
+## 💰 Price Comparison
+
+> Add screenshot here
+
+---
+
+## ⚠️ Drug Interaction Checker
+
+> Add screenshot here
+
+---
+
+## 🏥 Nearby Pharmacies
+
+> Add screenshot here
+
+---
+
+## 🚨 Emergency Page
+
+> Add screenshot here
+
+---
+
+# 🏗️ Architecture
+
+```
+React + TypeScript
+        │
+        ▼
+Express REST API
+        │
+        ▼
+ MongoDB Database
+        │
+        ▼
+ Google Gemini AI
+```
 
 ---
 
 # 🚀 Future Enhancements
 
-- 🤖 AI-powered medicine recommendations
-- 📅 Doctor appointment booking
-- 📊 Medicine adherence analytics
-- 🔔 Email and SMS reminders
+- 🔐 User Authentication
+- ☁️ Cloud Backup & Sync
+- 📅 Doctor Appointment Scheduling
+- 👨‍👩‍👧 Multi-user Profiles
+- 📊 Medicine Adherence Analytics
+- 🔔 Push Notifications
 - 📱 Progressive Web App (PWA)
-- 💬 AI Health Assistant
+- 🌍 Multi-language Support
 
 ---
 
@@ -224,7 +300,7 @@ npm start
 Contributions are welcome!
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a new feature branch
 
 ```bash
 git checkout -b feature-name
@@ -233,10 +309,10 @@ git checkout -b feature-name
 3. Commit your changes
 
 ```bash
-git commit -m "Added new feature"
+git commit -m "Add new feature"
 ```
 
-4. Push your branch
+4. Push to GitHub
 
 ```bash
 git push origin feature-name
@@ -246,15 +322,12 @@ git push origin feature-name
 
 ---
 
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 # 👩‍💻 Author
 
 **Ayushi Karwa**
 
 - GitHub: https://github.com/AyushiKarwa
-- LinkedIn: *(Add your LinkedIn profile)*
+
+---
+
+⭐ If you found this project useful, don't forget to give it a star!
